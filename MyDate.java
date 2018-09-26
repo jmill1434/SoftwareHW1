@@ -33,14 +33,18 @@ public class MyDate{
 		return Integer.toString(my_date_);
 	}
 
-	/*public String GetMyDateString1() {
+	public String GetMyDateString1() {
 		//please return a date string in the format of mm/dd/yyyy
+		SimpleDateFormat dateFormat = new SimpleDateFormat("mm/dd/yyyy");
+        	return dateFormat.format(new Date());
+
 	}
 
 	public String GetMyDateString2() {
 		//please return a date string in the format of dd/mm/yyyy
+	
 	}
-*/
+
 	public boolean IsLeapYear(int year) {
 		//please return true if the year is a leap year
 		//return false if the year is not a leap year
